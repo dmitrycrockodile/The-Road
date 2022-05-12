@@ -1,0 +1,58 @@
+@keyframes drop-letters {
+   0% {
+      transform: translateY(0);
+   }
+   10% {
+      transform: translateY(0);
+   }
+   15% {
+      transform: translateY(-100%);
+   }
+   20% {
+      transform: translateY(0);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}
+
+@keyframes image-float {
+   0% {
+      transform: translateZ(40rem);
+   }
+   40% {
+      transform: translateZ(-500rem) translateX(150rem);
+      opacity: .8;
+
+   }
+   70% {
+      transform: translateZ(-1500rem) translateX(800rem);
+      opacity: .6;
+   }
+   80% {
+      transform: translateZ(-50rem) translateX(100rem);
+      opacity: .8;
+   }
+   100% {
+      transform: translateZ(40rem);
+      opacity: 1;
+   }
+}
+
+@keyframes contact-bg {
+   0% {
+      background-color: #3d3d3d;
+   }
+   25% {
+      background-color: #ced8e4;
+   }
+   50% {
+      background-color: #1e81f3;
+   }
+   75% {
+      background-color: #ff7842;
+   }
+   100% {
+      background-color: #3d3d3d;
+   }
+}

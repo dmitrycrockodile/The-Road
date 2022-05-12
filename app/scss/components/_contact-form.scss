@@ -1,0 +1,90 @@
+.contact-form {
+   width: 70rem;
+   height: 50rem;
+   background-color: rgba($color-white, .95);
+   margin: auto;
+   flex-direction: column;
+   border-radius: .5rem;
+   box-shadow: 0 1rem 3rem $color-black;
+   padding: 5rem;
+
+   @include respond(tab-port) {
+      width: 90%;
+   }
+
+   @include respond(phone) {
+      padding: 2rem;
+      height: 40rem;
+   }
+
+   &__groups {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__groups &__group {
+      width: 48.5%;
+   }
+
+   &__group {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0;
+      position: relative;
+
+      input,
+      textarea {
+         padding: 3rem 1rem 1rem 1rem;
+         background-color: $color-secondary;
+         border: .1rem solid $color-secondary;
+         font-size: 1.4rem;
+         color: $color-grey-light;
+         letter-spacing: .1rem;
+         border-radius: .5rem;
+         transition: border .3s;
+
+         &:focus {
+            border: .1rem solid $color-grey-light-3;
+            outline: none;
+         }
+      }
+
+      textarea {
+         max-height: 15rem;
+         max-width: 100%;
+         min-height: 5rem;
+         min-width: 50%;
+      }
+
+      label {
+         font-size: 1.2rem;
+         font-weight: 600;
+         text-transform: uppercase;
+         letter-spacing: .1rem;
+         color: $color-grey;
+         position: absolute;
+         top: 1rem;
+         left: 1rem;
+      }
+   }
+
+   &__btn {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.6rem;
+      letter-spacing: .1rem;
+      margin-top: 1rem;
+      background-color: $color-grey-light;
+      color: $color-white;
+      border-radius: .5rem;
+      border: none;
+      transition: all .4s;
+      cursor: pointer;
+
+      &:hover {
+         background-color: $color-grey;
+      }
+   }
+}

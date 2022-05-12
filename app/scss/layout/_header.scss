@@ -1,0 +1,32 @@
+.header {
+   width: 100%;
+   height: calc(100vh - 7rem);
+   background: linear-gradient(rgba(18, 113, 255, .5), rgba(18, 113, 255, .3)), url(../images/header-bg.jpg) center no-repeat;
+   background-size: cover;
+   position: relative;
+   perspective: 100rem;
+
+   @include respond(phone) {
+      height: 100vh;
+   }
+
+   &__text {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      text-shadow: 0 .3rem .5rem $color-grey;
+
+      @include respond(tab-mini-land) {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         z-index: 10;
+      }
+   }
+
+   &__img {
+      width: 35%;
+      animation: image-float 150s infinite;
+   }
+}

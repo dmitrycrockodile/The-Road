@@ -1,0 +1,36 @@
+.footer {
+   background-color: $color-grey;
+   padding: 4rem 0 2rem 0;
+
+   &__list {
+      display: flex;
+      justify-content: center;
+
+      @include respond(tab-port) {
+         flex-direction: column;
+         align-items: center;
+      }
+
+      &-item {
+         padding: .3rem 3rem;
+         letter-spacing: .3rem;
+         background-color: $color-grey;
+         margin: 0 2rem;
+         transition: all .3s;
+
+         &:hover {
+            transform: rotate(-10deg);
+            box-shadow: 0 1rem 5.5rem $color-black;
+         }
+
+         @include respond(tab-mini-land) {
+            padding: 0.3rem 2rem;
+            margin: 0 1rem;
+         }
+
+         @include respond(tab-port) {
+            margin: 1rem 0;
+         }
+      }
+   }
+}

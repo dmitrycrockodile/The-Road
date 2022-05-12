@@ -1,0 +1,105 @@
+.heading-1 {
+   font-size: $heading-1-size;
+   color: $color-white;
+
+   @include respond(tab-mini-land) {
+      font-size: 6rem;
+   }
+}
+
+.header__paragraph {
+   font-size: 3rem;
+   font-weight: 500;
+   color: $color-secondary;
+   max-width: 70rem;
+   margin: auto;
+
+   @include respond(tab-mini-land) {
+      font-size: 2.5rem;
+   }
+
+   @include respond(tab-port) {
+      display: none;
+   }
+}
+
+.popular-tours__title {
+   font-size: $heading-1-size;
+   text-align: center;
+   margin-bottom: 8rem;
+   color: $color-primary;
+   text-shadow: 0 .1rem .2rem $color-primary;
+   text-transform: capitalize;
+
+   @include respond(tab-mini-land) {
+      font-size: 6rem;
+   }
+
+   @include respond(tab-port) {
+      font-size: 5rem;
+   }
+}
+
+.card__name {
+   font-size: 2.5rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   position: absolute;
+   top: 30%;
+   right: 1.5rem;
+   color: $color-white;
+   text-shadow: 0 0 1rem $color-black;
+}
+
+.story__title {
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   color: $color-grey;
+   margin-bottom: 1rem; 
+}
+
+.story__paragraph {
+   font-size: 1.8rem;
+   color: $color-grey-light;
+
+   &::first-letter {
+      margin-left: 1rem;
+   }
+}
+
+.contact__title {
+   font-size: 7rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: .5rem;
+   color: $color-white;
+   text-shadow: 0 1rem 2rem $color-black;
+   margin-bottom: 8rem;
+
+   @include respond(phone) {
+      font-size: 6rem;
+   }
+}
+
+.footer {
+   &__copy {
+      text-align: center;
+      font-size: 1.5rem;
+      color: $color-secondary;
+      letter-spacing: .2rem;
+      margin-top: 5rem;
+   }
+
+
+   &__list-link {
+      font-size: 2rem;
+      color: inherit;
+   }
+}
+
+.navbar__list-link {
+   font-size: 3rem;
+   font-weight: 700;
+   color: $color-white;
+   text-transform: uppercase;
+}
